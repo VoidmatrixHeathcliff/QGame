@@ -1489,7 +1489,7 @@ os.exit()
 ```
 
 > ## FadeInMusic
-播放已加载的音乐
+使用淡入效果播放已加载的音乐
 ```lua
 result = FadeInMusic(flag, loops, ms)
 ```
