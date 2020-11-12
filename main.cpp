@@ -871,7 +871,7 @@ extern "C" int playSound(lua_State * L)
 	int index = lua_tonumber(L, 1);
 	int loops = lua_tonumber(L, 2);
 
-	if (index >= vMusic.size())
+	if (index >= vSound.size() || index < 0)
 	{
 		lua_pushnumber(L, -1);
 	}
