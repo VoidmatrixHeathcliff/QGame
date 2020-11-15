@@ -1,6 +1,6 @@
 # QGame
 
-[![](https://img.shields.io/github/stars/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/stargazers)[![](https://img.shields.io/github/forks/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/network/members)[![](https://img.shields.io/github/issues/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/issues)![](https://img.shields.io/github/license/VoidmatrixHeathcliff/QGame.svg?style=flat&label=license&message=notspecified&labelColor=3f48cc)
+[![](https://img.shields.io/github/stars/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/stargazers)  [![](https://img.shields.io/github/forks/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/network/members)  [![](https://img.shields.io/github/issues/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/issues)  ![](https://img.shields.io/github/license/VoidmatrixHeathcliff/QGame.svg?style=flat&label=license&message=notspecified&labelColor=3f48cc)
 
 QGame意为Quick Game或Cute Game，是一个基于[SDL](http://www.libsdl.org/)及其附加库开发的轻量级跨平台Lua游戏库。
 
@@ -44,6 +44,20 @@ QGame的代码目前是一个独立的.cpp文件，您可以直接在编译器�
 | 交互事件 | [交互事件](./.docs/zh/Action.md) | [Interactive](./.docs/en/api/interactive.md)                            | 対話                     |
 | 其他     | [其他](./.docs/zh/Others.md)     | ~~Others~~                             | その他の機能             |
 
+## QGame与开源社区
+
+### 协议
+
+QGame目前正处于开发阶段，具体选用何种协议尚待社区讨论。
+
+### 交叉支持
+
+QGame并非一款专精某一领域的游戏引擎，而是一个试图提供一套通用解决方法的通用游戏引擎。因此它理论上将可用于ACT、RPG、AVG等多种类型的游戏开发。具体类型由您二次开发的框架决定。
+为了节省开发者的开发成本，本引擎的AVG部分除了允许使用本引擎的lua语言脚本控制外，还将引入对[UniGal-Script](https://github.com/Uni-Gal/UniGal-Script)的支持。UniGal是一个基于XML的通用的用于引擎间交换演出脚本核心数据的标准。对它的支持将在未来开发。
+
+## TODO
+
+完善文档
 
 
 ## 联系开发组

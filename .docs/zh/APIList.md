@@ -1,8 +1,8 @@
 # API字母顺序总览
 
-+ CreateWindow()：创建窗口，并将此窗口作为图形绘制等操作的上下文
-+ Clear()：清空绘图窗口内容
-+ DrawText()：在指定位置绘制文字
++ [CreateWindow()](Window.md#3)：创建窗口，并将此窗口作为图形绘制等操作的上下文
++ [Clear()](Graphic.md#35)：清空绘图窗口内容
++ [DrawText()](Graphic.md#708)：在指定位置绘制文字
 + FillRectangle()：在指定位置绘制填充矩形
 + FadeInMusic()：播放淡入音乐
 + FadeOutMusic()：淡出并停止当前正在播放的音乐

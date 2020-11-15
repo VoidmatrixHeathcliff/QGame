@@ -1,5 +1,43 @@
 # QGame库窗口操作
 
+
+
+本文档函数目录
+
+CreateWindow
+
+ShowMessageBox
+
+SetWindowTitle
+
+GetWindowTitle
+
+SetWindowPosition
+
+GetWindowPosition
+
+SetWindowSize
+
+GetWindowSize
+
+SetWindowMaxSize
+
+GetWindowMaxSize
+
+SetWindowMinSize
+
+GetWindowMinSize
+
+SetWindowMode
+
+SetWindowResizable
+
+SetWindowOpacity
+
+
+
+
+
 > ## CreateWindow
 创建窗口，并将此窗口作为图形绘制等操作的上下文
 ```lua
