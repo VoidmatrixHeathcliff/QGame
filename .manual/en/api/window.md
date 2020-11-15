@@ -51,16 +51,16 @@
     |flags|string|The window attribute flag can be a string composed of the following values ->|"F" : Full screen (realized by changing the video mode); "D" : ~~Pseudo~~ full screen (this option does not change the video mode, it uses the current device resolution to display the window); "B" : Borderless; "R" : Resizeable; "M" : Maximum on creation; "N" : Minimum on creation;|  
 
     _`returns`_:  
-    |name|type|discription|  
-    |:---:|:---:|:---:|  
-    |单元格|单元格|单元格|  
+    Returns nothing
 
     _`Example`_:  
 
     ```lua
-    //example here  
-
-
+    QG = require("QGame")
+    QG.Init()
+    QG.CreateWindow("Hello World", -1, -1, 1280, 720, "RM") -- Create a window titled Hello World, maximize it and adjust its size, and display it in the default position. When using the "maximize" property to set the window, the set width and height will be ignored.
+    QG.Sleep(5000)
+    os.exit() -- exit after five secs
     ```
 
 ---
