@@ -1,188 +1,54 @@
-# QGame开发文档
+# QGame
 
-## [click here](./.manual/en/quickstart.md) to visit the doc_en.
+[![](https://img.shields.io/github/stars/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/stargazers)[![](https://img.shields.io/github/forks/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/network/members)[![](https://img.shields.io/github/issues/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/issues)![](https://img.shields.io/github/license/VoidmatrixHeathcliff/QGame.svg?style=flat&label=license&message=notspecified&labelColor=3f48cc)
 
-> QGame意为Quick Game或Cute Game，是一个基于[SDL](http://www.libsdl.org/)及其附加库开发的轻量级跨平台Lua游戏库，开发者可以通过简单的Lua脚本制作出效率和体积都十分出色的游戏程序，目前版本的QGame可以提供图像渲染、媒体播放控制，以及系统信息的获取和完善的交互事件处理等功能，如果在使用过程中出现任何问题或有任何建议，请开个issue。
+QGame意为Quick Game或Cute Game，是一个基于[SDL](http://www.libsdl.org/)及其附加库开发的轻量级跨平台Lua游戏库。
 
-## 1. API字母顺序总览
+Qgame, which means *Quick game* or *Cute game*, is a [SDL]( http://www.libsdl.org/ ) and additional library based lightweight cross platform Lua game library.
 
-详情参见此处 [APIList](./.manual/zh/APIList.md)
+若要阅读更多语言版本的README文档，请点击[此处](./.readme/README.md)。
 
-## 2. API功能分类及介绍
+For Multi Language README files，please click [here](./.readme/README.md) to read.
 
-### 2.1 QGame库基础功能
+## QGame介绍
 
-详情参见此处 [Basic.md](./.manual/zh/Basic.md)
+通过QGame，开发者可以使用简单的Lua脚本制作出效率和体积都十分出色的游戏程序。目前版本的QGame可以提供图像渲染、媒体播放控制，以及系统信息的获取和完善的交互事件处理等功能。
 
-### 2.2 QGame库窗口操作
+QGame的代码目前是一个独立的.cpp文件，您可以直接在编译器中编译它。
 
-详情参见此处 [Window.md](./.manual/zh/Window.md)
+本项目不附带SDL的头文件，您需要自行在SDL的官网上[下载](http://www.libsdl.org/download-2.0.php)它们
 
-### 2.3 QGame库图形相关操作
+## QGame文档
 
-详情参见此处 [Graphic.md](./.manual/zh/Graphic.md)
+您可以根据您的使用需求，选择不同的文档。
 
-### 2.4 QGame库媒体相关操作
+此外要说明的是，不同语言的文档由不同团队分别完成，我们保证其函数介绍的内容是正确的，但模板和组织形式不一定完全对应。
 
-详情参见此处 [Media.md](./.manual/zh/Media.md)
+### 面向使用者的学习指导
 
-### 2.5 QGame库交互事件处理
+|            | 中文(zh) | English(en)  | 日本語(ja) |
+| ---------- | -------- | ------------ | ---- |
+| 入门手册   | [入门手册](./.manual/zh/入门手册.md) | [Guidebook](./.manual/en/Guidebook.md)    | [入門編](./.manual/ja/入門編.md) |
+| 了解QGame  | 认识框架 | Introduction | 紹介 |
+| 第一个程序 | 你好世界 | Helloworld   | Helloworld |
 
-详情参见此处 [Action.md](./.manual/zh/Action.md)
+### 面向开发者的学习流程和API参考
 
-### 2.6 QGame库其它功能
+|          | 中文(zh) | English(en)                            | 日本語(ja)               |
+| -------- | -------- | --------- | -------- |
+| 快速开始 | [快速开始](./.docs/zh/快速开始.md) | [Quickstart](./.docs/en/quickstart.md) | 開始                     |
+| 基础功能 | [基础功能](./.docs/zh/Basic.md) | [Basic](./.docs/en/api/basic.md)                                  | 基本機能                 |
+| 窗口操作 | [窗口操作](./.docs/zh/Window.md) | [Window](./.docs/en/api/window.md)                                 | ウインドウ　コントロール |
+| 图形     | [图形](./.docs/zh/Graphic.md)     | [Graphic](./.docs/en/api/graphics.md)                                | グラフィックス           |
+| 媒体     | [媒体](./.docs/zh/Media.md)     | [Media](./.docs/en/api/media.md)                                  | 媒体                     |
+| 交互事件 | [交互事件](./.docs/zh/Action.md) | [Interactive](./.docs/en/api/interactive.md)                            | 対話                     |
+| 其他     | [其他](./.docs/zh/Others.md)     | ~~Others~~                             | その他の機能             |
 
-详情参见此处 [Others.md](./.manual/zh/Others.md)
 
-## 3. 附录
 
-> ## 键盘事件对应表
+## 联系开发组
 
-### ***前缀***
+如果在使用过程中出现任何问题或有任何建议，请直接在本仓库中提交issue。
 
-| 值        | 描述     |
-|:----------|:---------|
-| "KEYDOWN" | 按键按下 |
-| "KEYUP"   | 按键抬起 |
-
-### ***后缀***
-
-**注意：**
-部分字符的按键事件为虚拟事件，在大部分键盘上可能无法通过物理按键触发
-
-| 值              | 描述            |
-|:----------------|:----------------|
-| "0"             | 0               |
-| "00"            | 00              |
-| "000"           | 000             |
-| "1"             | 1               |
-| "2"             | 2               |
-| "3"             | 3               |
-| "4"             | 4               |
-| "5"             | 5               |
-| "6"             | 6               |
-| "7"             | 7               |
-| "8"             | 8               |
-| "9"             | 9               |
-| "F1"            | F1              |
-| "F2"            | F2              |
-| "F3"            | F3              |
-| "F4"            | F4              |
-| "F5"            | F5              |
-| "F6"            | F6              |
-| "F7"            | F7              |
-| "F8"            | F8              |
-| "F9"            | F9              |
-| "F10"           | F10             |
-| "F11"           | F11             |
-| "F12"           | F12             |
-| "F13"           | F13             |
-| "F14"           | F14             |
-| "F15"           | F15             |
-| "F16"           | F16             |
-| "F17"           | F17             |
-| "F18"           | F18             |
-| "F19"           | F19             |
-| "F20"           | F20             |
-| "F21"           | F21             |
-| "F22"           | F22             |
-| "F23"           | F23             |
-| "F24"           | F24             |
-| "A"             | A               |
-| "B"             | B               |
-| "C"             | C               |
-| "D"             | D               |
-| "E"             | E               |
-| "F"             | F               |
-| "G"             | G               |
-| "H"             | H               |
-| "I"             | I               |
-| "J"             | J               |
-| "K"             | K               |
-| "L"             | L               |
-| "M"             | M               |
-| "N"             | N               |
-| "O"             | O               |
-| "P"             | P               |
-| "Q"             | Q               |
-| "R"             | R               |
-| "S"             | S               |
-| "T"             | T               |
-| "U"             | U               |
-| "V"             | V               |
-| "W"             | W               |
-| "X"             | X               |
-| "Y"             | Y               |
-| "Z"             | Z               |
-| "ESC"           | Esc             |
-| "ENTER"         | Enter           |
-| "BACKSPACE"     | Backspace       |
-| "UP"            | ↑               |
-| "DOWN"          | ↓               |
-| "LEFT"          | ←               |
-| "RIGHT"         | →               |
-| "INSERT" | Insert |
-| "DELETE" | Delete |
-| "HOME" | Home |
-| "END" | End |
-| "PAGEUP" | PageUp |
-| "PAGEDOWN" | pageDown |
-| "LCTRL" | 左Ctrl键 |
-| "LGUI" | 左GUI键（Windows系统下为Win键，Mac系统下为Command键） |
-| "LALT" | 左Alt键 |
-| "LSHIFT" | 左Shift键 |
-| "RCTRL" | 右Ctrl键 |
-| "RGUI" | 右GUI键（Windows系统下为Win键，Mac系统下为Command键） |
-| "RALT" | 右Alt键 |
-| "RSHIFT" | 右Shift键 |
-| "SPACE" | 空格键 |
-| "TAB" | Tab键 |
-| "CAPSLOCK" | CapsLock |
-| "NUMLOCK" | NumLock |
-| "PRINTSCREEN" | PrintScreen |
-| "SCROLLLOCK" | ScrollLock |
-| "PAUSE" | 媒体播放暂停键 |
-| "AUDIOMUTE" | 静音键 |
-| "AUDIOPREV" | 媒体播放上一首键 |
-| "AUDIONEXT" | 媒体播放下一首键 |
-| "AUDIOPLAY" | 媒体播放开始键 |
-| "AUDIOSTOP" | 媒体播放停止键 |
-| "VOLUMEUP" | 音量增大键 |
-| "VOLUMEDOWN" | 音量减小键 |
-| "BRIGHTNESSUP" | 亮度增加键 |
-| "BRIGHTNESSDOWN" | 亮度减少键 |
-| "BACKQUOTE" | ` |
-| "EXCLAM" | ! |
-| "AT" | @ |
-| "HASH" | # |
-| "DOOLAR" | $ |
-| "CARET" | ^ |
-| "AMPERSAND" | & |
-| "DBLAMPERSAND" | && |
-| "ASTERISK" | * |
-| "LEFTPAREN" | ( |
-| "RIGHTPAREN" | ) |
-| "MINUS" | - |
-| "UNDERSCORE" | _ |
-| "PLUS" | + |
-| "EQUALS" | = |
-| "LEFTBRACKET" | [ |
-| "RIGHTBRACKET" | ] |
-| "LEFTBRACE" | { |
-| "RIGHTBRACE" | } |
-| "COLON" | : |
-| "SEMICOLON" | ; |
-| "BACKSLASH" | \ |
-| "QUOTE" | ' |
-| "QUOTEDBL" | " |
-| "LESS" | < |
-| "GREATER" | > |
-| "COMMA" | , |
-| "PERIOD" | . |
-| "QUESTION" | ? |
-| "SLASH" | / |
-| "VERTICALBAR" | \| |
-| "DBLVERTICALBAR" | \|\| |
-| "WWW" | WWW |
-| "EMAIL" | Email |
+也欢迎您直接发送邮件至Voidmatrix@qq.com
 
