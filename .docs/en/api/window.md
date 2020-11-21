@@ -189,7 +189,7 @@
     |name|type|discription|note|  
     |:---:|:---:|:---:|:---:|  
     |x|number|the x coordination of the window|Na|  
-    |y|number|the y coordination of the window|Na|  
+    |y|number|the y coordination of the w indow|Na|  
 
     _`Example`_:  
 
