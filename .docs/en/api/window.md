@@ -107,12 +107,12 @@
   
 * <span id="311">get (title)</span>  
 
-    _`discription`_:  set the title of the window.
+    _`discription`_:  get the title of the window.
 
     _`API usage`_:  
 
     ```lua
-    GetWindowTitle()
+    title = GetWindowTitle()
     ```
 
     _`arguments`_:  
@@ -163,6 +163,75 @@
     QG.CreateWindow("Hello World", -1, -1, 1280, 720, "RM")
     QG.Sleep(3000)  -- change the window title after 3 seconds
     QG.SetWindowTitle("This is new Title")
+    QG.Sleep(5000)
+    QG.Quit()
+    os.exit()
+    ```
+
+---
+
+### <span id="32">window position</span>    
+  
+* <span id="321">get (window position)</span>  
+
+    _`discription`_:  get the x-y position of the window.  
+
+    _`API usage`_:  
+
+    ```lua
+    x, y = GetWindowPosition()
+    ```
+
+    _`arguments`_:  
+    Pass nothing
+
+    _`returns`_:  
+    |name|type|discription|note|  
+    |:---:|:---:|:---:|:---:|  
+    |x|number|the x coordination of the window|Na|  
+    |y|number|the y coordination of the window|Na|  
+
+    _`Example`_:  
+
+    ```lua
+    QG = require("QGame")
+    QG.Init()
+    QG.CreateWindow("Hello World", -1, -1, 1280, 720, "RM")
+    print(QG.GetWindowPosition())    -- print the position of the window
+    QG.Pause()
+    QG.Quit()
+    os.exit()
+    ```
+
+    ---
+
+* <span id="322">set (window position)</span>  
+
+    _`discription`_:  set the x-y position of the window.  
+
+    _`API usage`_:  
+
+    ```lua
+    SetWindowTitle(title)
+    ```
+
+    _`arguments`_:  
+    |name|type|discription|note|  
+    |:---:|:---:|:---:|:---:|  
+    |x|number|the x coordination|Na|
+    |y|number|the y coordination|Na|  
+
+    _`returns`_:  
+    Returns nothing
+
+    _`Example`_:  
+
+    ```lua
+    QG = require("QGame")
+    QG.Init()
+    QG.CreateWindow("Hello World", -1, -1, 1280, 720, "R")
+    QG.Sleep(3000)  -- move the window to the left-up corner of the screen after 3 seconds.
+    QG.SetWindowPosition(0, 0)
     QG.Sleep(5000)
     QG.Quit()
     os.exit()
