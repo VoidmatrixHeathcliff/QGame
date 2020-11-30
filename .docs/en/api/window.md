@@ -41,14 +41,14 @@
     ```
 
     _`arguments`_:  
-    |name|type|discription|note|  
-    |:---:|:---:|:---:|:---:|  
-    |title|string|the title of the window|Na|  
-    |x|number|the x coordinate of the window position, a negative value means the default position|Na|  
-    |y|number|the y coordinate of the window position, a negative value means the default position|Na|  
-    |width|number|window width|Na|  
-    |height|number|window height|Na|  
-    |flags|string|The window attribute flag can be a string composed of the following values ->|"F" : Full screen (realized by changing the video mode); "D" : ~~Pseudo~~ full screen (this option does not change the video mode, it uses the current device resolution to display the window); "B" : Borderless; "R" : Resizeable; "M" : Maximum on creation; "N" : Minimum on creation;|  
+    |  name  |  type  |                                     discription                                      |                                                                                                                                            note                                                                                                                                            |
+    | :----: | :----: | :----------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+    | title  | string |                               the title of the window                                |                                                                                                                                             Na                                                                                                                                             |
+    |   x    | number | the x coordinate of the window position, a negative value means the default position |                                                                                                                                             Na                                                                                                                                             |
+    |   y    | number | the y coordinate of the window position, a negative value means the default position |                                                                                                                                             Na                                                                                                                                             |
+    | width  | number |                                     window width                                     |                                                                                                                                             Na                                                                                                                                             |
+    | height | number |                                    window height                                     |                                                                                                                                             Na                                                                                                                                             |
+    | flags  | string |    The window attribute flag can be a string composed of the following values ->     | "F" : Full screen (realized by changing the video mode); "D" : ~~Pseudo~~ full screen (this option does not change the video mode, it uses the current device resolution to display the window); "B" : Borderless; "R" : Resizeable; "M" : Maximum on creation; "N" : Minimum on creation; |
 
     _`returns`_:  
     Returns nothing
@@ -78,11 +78,11 @@
     ```
 
     _`arguments`_:  
-    |name|type|discription|note|  
-    |:---:|:---:|:---:|:---:|  
-    |type|string|the type of the window, could be one of the following values: ->|"ERROR" means show as error; "WARNING" means show as warning; "INFO"(default) means show as infomation.|  
-    |title|string|the title of the window|Na|  
-    |content|string|the content of the window|Na|  
+    |  name   |  type  |                           discription                            |                                                  note                                                   |
+    | :-----: | :----: | :--------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
+    |  type   | string | the type of the window, could be one of the following values: -> | "ERROR" means show as error; "WARNING" means show as warning; "INFO"(default) means show as infomation. |
+    |  title  | string |                     the title of the window                      |                                                   Na                                                    |
+    | content | string |                    the content of the window                     |                                                   Na                                                    |
 
 
     _`returns`_:  
@@ -119,9 +119,9 @@
     Pass nothing
 
     _`returns`_:  
-    |name|type|discription|note|  
-    |:---:|:---:|:---:|:---:|  
-    |title|string|the title of the window|Na|  
+    | name  |  type  |       discription       | note  |
+    | :---: | :----: | :---------------------: | :---: |
+    | title | string | the title of the window |  Na   |
 
     _`Example`_:  
 
@@ -148,9 +148,9 @@
     ```
 
     _`arguments`_:  
-    |name|type|discription|note|  
-    |:---:|:---:|:---:|:---:|  
-    |title|string|the title of the window|Na|  
+    | name  |  type  |       discription       | note  |
+    | :---: | :----: | :---------------------: | :---: |
+    | title | string | the title of the window |  Na   |
 
     _`returns`_:  
     Returns nothing
@@ -186,10 +186,10 @@
     Pass nothing
 
     _`returns`_:  
-    |name|type|discription|note|  
-    |:---:|:---:|:---:|:---:|  
-    |x|number|the x coordination of the window|Na|  
-    |y|number|the y coordination of the w indow|Na|  
+    | name  |  type  |            discription            | note  |
+    | :---: | :----: | :-------------------------------: | :---: |
+    |   x   | number | the x coordination of the window  |  Na   |
+    |   y   | number | the y coordination of the w indow |  Na   |
 
     _`Example`_:  
 
@@ -201,8 +201,7 @@
     QG.Pause()
     QG.Quit()
     os.exit()
-    ```
-
+    ````
     ---
 
 * <span id="322">set (window position)</span>  
@@ -216,10 +215,10 @@
     ```
 
     _`arguments`_:  
-    |name|type|discription|note|  
-    |:---:|:---:|:---:|:---:|  
-    |x|number|the x coordination|Na|
-    |y|number|the y coordination|Na|  
+    | name  |  type  |    discription     | note  |
+    | :---: | :----: | :----------------: | :---: |
+    |   x   | number | the x coordination |  Na   |
+    |   y   | number | the y coordination |  Na   |
 
     _`returns`_:  
     Returns nothing
@@ -239,4 +238,310 @@
 
 ---
 
-# [!] Not the final release. Not finished yet. 
+### <span id="33">window size</span>    
+  
+* <span id="331">get (window size)</span>  
+
+    _`discription`_:  get the x-y position of the window.  
+
+    _`API usage`_:  
+
+    ```lua
+    x, y = GetWindowPosition()
+    ```
+
+    _`arguments`_:  
+    Pass nothing
+
+    _`returns`_:  
+    | name  |  type  |            discription            | note  |
+    | :---: | :----: | :-------------------------------: | :---: |
+    |   x   | number | the x coordination of the window  |  Na   |
+    |   y   | number | the y coordination of the w indow |  Na   |
+
+    _`Example`_:  
+
+    ```lua
+    QG = require("QGame")
+    QG.Init()
+    QG.CreateWindow("Hello World", -1, -1, 1280, 720, "RM")
+    print(QG.GetWindowPosition())    -- print the position of the window
+    QG.Pause()
+    QG.Quit()
+    os.exit()
+    ```
+
+    ---
+
+* <span id="332">set (window size)</span>  
+
+    _`discription`_:  set the x-y position of the window.  
+
+    _`API usage`_:  
+
+    ```lua
+    SetWindowTitle(title)
+    ```
+
+    _`arguments`_:  
+    | name  |  type  |    discription     | note  |
+    | :---: | :----: | :----------------: | :---: |
+    |   x   | number | the x coordination |  Na   |
+    |   y   | number | the y coordination |  Na   |
+
+    _`returns`_:  
+    Returns nothing
+
+    _`Example`_:  
+
+    ```lua
+    QG = require("QGame")
+    QG.Init()
+    QG.CreateWindow("Hello World", -1, -1, 1280, 720, "R")
+    QG.Sleep(3000)  -- move the window to the left-up corner of the screen after 3 seconds.
+    QG.SetWindowPosition(0, 0)
+    QG.Sleep(5000)
+    QG.Quit()
+    os.exit()
+    ```
+
+#### <span id="333">Limit (of window size)</span>  
+
+  ##### <span id="3331">maximum size (of window size)</span>  
+  * Get:
+  
+    _`discription`_:  Get the maxinum size of the window.
+
+    _`API usage`_:  
+
+    ```lua
+    width, height = GetWindowMaxSize()
+    ```
+
+    _`arguments`_:  
+    Pass notrhing
+
+    _`returns`_:  
+    | name  |  type  |    discription     | note  |
+    | :---: | :----: | :----------------: | :---: |
+    |   width   | number | the maxinum width of the window |  Na   |
+    |   height  | number | the maxinum height of the window |  Na   |
+
+    _`Example`_:  
+
+    ```lua
+    QG = require("QGame")
+
+    QG.Init()
+
+    QG.CreateWindow("Hello World", -1, -1, 1280, 720, "RM")
+    QG.SetWindowMaxSize(1920, 1080) -- set the max window size to 1920x1080
+    print(QG.GetWindowMaxSize())    -- print the max window size
+    QG.Pause()
+
+    QG.Quit()
+    os.exit()
+    ```
+
+  ---
+
+  * Set
+
+  _`discription`_:  Set the maxinum size of the window.
+
+    _`API usage`_:  
+
+    ```lua
+    SetWindowMaxSize(width, height)
+    ```
+
+    _`arguments`_:  
+    | name  |  type  |    discription     | note  |
+    | :---: | :----: | :----------------: | :---: |
+    |   width   | number | the maxinum width of the window |  Na   |
+    |   height  | number | the maxinum height of the window |  Na   |
+
+    _`returns`_:  
+    returns nothing
+
+    _`Example`_:  
+
+    ```lua
+    QG = require("QGame")
+    QG.Init()
+    QG.CreateWindow("Hello World", -1, -1, 1280, 720, "R")
+    QG.SetWindowMaxSize(1920, 1080) -- Set the maximum size to 1920x1080
+    QG.Sleep(5000)
+    QG.Quit()
+    os.exit()
+    ```
+
+  ---
+
+  ##### <span id="3332">minimum size (of window size)</span>  
+
+  * Get
+
+    _`discription`_:  Get the minimum size of the window.
+
+    _`API usage`_:  
+
+    ```lua
+    width, height = GetWindowMinSize()
+    ```
+
+    _`arguments`_:  
+    Pass notrhing
+
+    _`returns`_:  
+    | name  |  type  |    discription     | note  |
+    | :---: | :----: | :----------------: | :---: |
+    |   width   | number | the minimum width of the window |  Na   |
+    |   height  | number | the minimum height of the window |  Na   |
+
+    _`Example`_:  
+
+    ```lua
+    QG = require("QGame")
+    QG.Init()
+    QG.CreateWindow("Hello World", -1, -1, 1280, 720, "RM")
+    QG.SetWindowMinSize(640, 360) -- set the minimum size to 1920x1080
+    print(QG.GetWindowMinSize())    -- print out the minimums size
+    QG.Pause()
+    QG.Quit()
+    os.exit()
+    ```  
+
+---
+
+  * Set
+    _`discription`_:  set the minimum size of window.  
+
+    _`API usage`_:  
+
+    ```lua
+    SetWindowMinSize(width, height)
+    ```
+
+    _`arguments`_:  
+    | name  |  type  |    discription     | note  |
+    | :---: | :----: | :----------------: | :---: |
+    |   width   | number | minimum width of the window |  Na   |
+    |   height   | number | minimum height of the window |  Na   |
+
+    _`returns`_:  
+    Returns nothing
+
+    _`Example`_:  
+
+    ```lua
+    QG = require("QGame")
+    QG.Init()
+    Window("Hello World", -1, -1, 1280, 720, "R")
+    dowMinSize(640, 360) -- set the minimum size to 640x360
+    5000)
+    QG.Quit()
+    os.exit()
+    ```
+
+---
+
+### <span id="34">window mode</span>  
+
+  _`discription`_:  apply different styles to the window  
+
+  _`API usage`_:  
+
+  ```lua
+  SetWindowMode(mode)
+  ```
+
+  _`arguments`_:  
+  | name  |  type  |           discription            | note  |
+  | :---: | :----: |:-------------------------------: | :---: |
+  |   mode   | number | style to be applied. Values can be ->  |  0: window mode ; 1: Full screen mode (with video mode changed) ; 2: Full screen mode (without video mode changed)   |
+
+  _`returns`_:  
+  returns nothing
+
+
+  _`Example`_:  
+
+  ```lua
+  QG = require("QGame")
+  QG.Init()
+  QG.CreateWindow("Hello World", -1, -1, 1280, 720, "R")
+  QG.Sleep(3000)
+  QG.SetWindowMode(1) -- Set the window to full screen mode
+  QG.Sleep(5000)
+  QG.Quit()
+  os.exit()
+  ```
+
+---
+
+### <span id="35">window resizeable</span>  
+
+  _`discription`_:  apply resizeable attribute to the window    
+
+  _`API usage`_:  
+
+  ```lua
+  SetWindowResizable(value)
+  ```
+
+  _`arguments`_:  
+  | name  |  type  |           discription            | note  |
+  | :---: | :----: |:-------------------------------: | :---: |
+  |   value   | boolean | boolean flag  |  can be true or false   |
+
+  _`returns`_:  
+  returns nothing
+
+
+  _`Example`_:  
+
+  ```lua
+  QG = require("QGame")
+  QG.Init()
+  QG.CreateWindow("Hello World", -1, -1, 1280, 720, "M")
+  QG.SetWindowResizable(true) -- set window resizeable , same as -M when creating window.
+  QG.Sleep(5000)
+  QG.Quit()
+  os.exit()
+  ```
+
+---
+
+### <span id="36">window opacity</span>  
+
+  _`discription`_:  apply resizeable attribute to the window    
+
+  _`API usage`_:  
+
+  ```lua
+  SetWindowOpacity(value)
+  ```
+
+  _`arguments`_:  
+  | name  |  type  |           discription            | note  |
+  | :---: | :----: |:-------------------------------: | :---: |
+  |   value   | number | the opacity of window  |  varies from 0.0 to 1.0   |
+
+  _`returns`_:  
+  returns nothing
+
+
+  _`Example`_:  
+
+  ```lua
+  QG = require("QGame")
+  QG.Init()
+  QG.CreateWindow("Hello World", -1, -1, 1280, 720, "R")
+  QG.SetWindowOpacity(0.5) -- set the window opacity to 0.5
+  QG.Sleep(5000)
+  QG.Quit()
+  os.exit()
+  ```
+
+---
