@@ -2,43 +2,33 @@
 
 
 
-本文档函数目录
+## 本文档函数目录
 
-CreateWindow
+以下为本部分文档中出现的QGame函数
 
-ShowMessageBox
+要查看所有的QGame函数，请访问[APIList.md](APIList.md)
 
-SetWindowTitle
-
-GetWindowTitle
-
-SetWindowPosition
-
-GetWindowPosition
-
-SetWindowSize
-
-GetWindowSize
-
-SetWindowMaxSize
-
-GetWindowMaxSize
-
-SetWindowMinSize
-
-GetWindowMinSize
-
-SetWindowMode
-
-SetWindowResizable
-
-SetWindowOpacity
++ CreateWindow
++ ShowMessageBox
++ SetWindowTitle
++ GetWindowTitle
++ SetWindowPosition
++ GetWindowPosition
++ SetWindowSize
++ GetWindowSize
++ SetWindowMaxSize
++ GetWindowMaxSize
++ SetWindowMinSize
++ GetWindowMinSize
++ SetWindowMode
++ SetWindowResizable
++ SetWindowOpacity
 
 
 
 
 
-> ## CreateWindow
+## CreateWindow
 创建窗口，并将此窗口作为图形绘制等操作的上下文
 ```lua
 CreateWindow(title, x, y, width, height, flags)
@@ -79,7 +69,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## ShowMessageBox
+## ShowMessageBox
 显示模态的提示信息窗口
 ```lua
 ShowMessageBox(type, title, content)
@@ -115,7 +105,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## SetWindowTitle
+## SetWindowTitle
 设置窗口标题
 ```lua
 SetWindowTitle(title)
@@ -144,7 +134,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## GetWindowTitle
+## GetWindowTitle
 获取窗口标题
 ```lua
 title = GetWindowTitle()
@@ -172,7 +162,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## SetWindowPosition
+## SetWindowPosition
 设置窗口坐标
 ```lua
 SetWindowPosition(x, y)
@@ -202,7 +192,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## GetWindowPosition
+## GetWindowPosition
 获取窗口坐标
 ```lua
 x, y = GetWindowPosition()
@@ -231,7 +221,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## SetWindowSize
+## SetWindowSize
 设置窗口大小
 ```lua
 SetWindowSize(width, height)
@@ -261,7 +251,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## GetWindowSize
+## GetWindowSize
 获取窗口大小
 ```lua
 width, height = GetWindowSize()
@@ -290,7 +280,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## SetWindowMaxSize
+## SetWindowMaxSize
 设置窗口最大尺寸的大小
 ```lua
 SetWindowMaxSize(width, height)
@@ -319,7 +309,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## GetWindowMaxSize
+## GetWindowMaxSize
 获取窗口最大尺寸大小
 ```lua
 width, height = GetWindowMaxSize()
@@ -349,7 +339,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## SetWindowMinSize
+## SetWindowMinSize
 设置窗口最小尺寸的大小
 ```lua
 SetWindowMinSize(width, height)
@@ -378,7 +368,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## GetWindowMinSize
+## GetWindowMinSize
 获取窗口最小尺寸大小
 ```lua
 width, height = GetWindowMinSize()
@@ -408,7 +398,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## SetWindowMode
+## SetWindowMode
 设置窗口模式
 ```lua
 SetWindowMode(mode)
@@ -442,8 +432,7 @@ QG.Sleep(5000)
 QG.Quit()
 os.exit()
 ```
-
-> ## SetWindowResizable
+## SetWindowResizable
 设置窗口是否大小可变
 ```lua
 SetWindowResizable(value)
@@ -471,7 +460,7 @@ QG.Quit()
 os.exit()
 ```
 
-> ## SetWindowOpacity
+## SetWindowOpacity
 设置窗口透明度
 ```lua
 SetWindowOpacity(value)
