@@ -1,8 +1,8 @@
 # API字母顺序总览
 
-+ [CreateWindow](Window.md#3)：创建窗口，并将此窗口作为图形绘制等操作的上下文
-+ [Clear](Graphic.md#35)：清空绘图窗口内容
-+ [DrawText](Graphic.md#708)：在指定位置绘制文字
++ [CreateWindow](Window.md#CreateWindow)：创建窗口，并将此窗口作为图形绘制等操作的上下文
++ [Clear](Graphic.md#Clear)：清空绘图窗口内容
++ [DrawText](Graphic.md#DrawText)：在指定位置绘制文字
 + FillRectangle：在指定位置绘制填充矩形
 + FadeInMusic：播放淡入音乐
 + FadeOutMusic：淡出并停止当前正在播放的音乐
@@ -20,7 +20,7 @@
 + GetWindowMinSize：获取窗口最小尺寸的大小
 + GetWindowPosition：获取窗口坐标
 + GetWindowSize：获取窗口大小
-+ GetWindowTitle：获取窗口标题
++ [GetWindowTitle](Window.md#GetWindowTitle)：获取窗口标题
 + Init：初始化QGame库
 + LoadImage：加载图像文件
 + LoadColorKeyImage：加载使用ColorKey表示透明区域的图像文件
@@ -50,9 +50,9 @@
 + SetWindowPosition：设置窗口坐标
 + SetWindowResizable：设置窗口是否大小可变
 + SetWindowSize：设置窗口大小
-+ SetWindowTitle ：设置窗口标题
++ [SetWindowTitle](Window.md#SetWindowTitle) ：设置窗口标题
 + ShowImage：显示已加载的图像
-+ ShowMessageBox：显示模态的提示信息窗口
++ [ShowMessageBox](Window.md#ShowMessageBox)：显示模态的提示信息窗口
 + ShowReshapeImage：显示裁剪后的已加载图像
 + ShowRotateImage：显示旋转后的已加载图像
 + ShowRotateReshapeImage：显示旋转且裁剪后的已加载图像
