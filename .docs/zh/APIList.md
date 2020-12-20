@@ -16,10 +16,10 @@
 + GetPlatform：获取平台类型
 + GetScrollValue ：获取鼠标滚轮滚动距离
 + GetSystemRAM：获取系统总内存大小
-+ GetWindowMaxSize：获取窗口最大尺寸的大小
-+ GetWindowMinSize：获取窗口最小尺寸的大小
-+ GetWindowPosition：获取窗口坐标
-+ GetWindowSize：获取窗口大小
++ [GetWindowMaxSize](Window.md#GetWindowMaxSize)：获取窗口最大尺寸的大小
++ [GetWindowMinSize](Window.md#GetWindowMinSize)：获取窗口最小尺寸的大小
++ [GetWindowPosition](Window.md#GetWindowPosition)：获取窗口坐标
++ [GetWindowSize](Window.md#GetWindowSize)：获取窗口大小
 + [GetWindowTitle](Window.md#GetWindowTitle)：获取窗口标题
 + Init：初始化QGame库
 + LoadImage：加载图像文件
@@ -43,13 +43,13 @@
 + SetImageAlpha：设置已加载图像的透明度
 + SetMusicVolume：设置音乐播放的音量
 + SetTextColor：设置字体绘制颜色
-+ SetWindowMaxSize：设置窗口最大尺寸的大小
-+ SetWindowMinSize：设置窗口最小尺寸的大小
-+ SetWindowMode：设置窗口模式
-+ SetWindowOpacity：设置窗口透明度
-+ SetWindowPosition：设置窗口坐标
-+ SetWindowResizable：设置窗口是否大小可变
-+ SetWindowSize：设置窗口大小
++ [SetWindowMaxSize](Window.md#SetWindowMaxSize)：设置窗口最大尺寸的大小
++ [SetWindowMinSize](Window.md#SetWindowMinSize)：设置窗口最小尺寸的大小
++ [SetWindowMode](Window.md#SetWindowMode)：设置窗口模式
++ [SetWindowOpacity](Window.md#SetWindowOpacity)：设置窗口透明度
++ [SetWindowPosition](Window.md#SetWindowPosition)：设置窗口坐标
++ [SetWindowResizable](Window.md#SetWindowResizable)：设置窗口是否大小可变
++ [SetWindowSize](Window.md#SetWindowSize)：设置窗口大小
 + [SetWindowTitle](Window.md#SetWindowTitle) ：设置窗口标题
 + ShowImage：显示已加载的图像
 + [ShowMessageBox](Window.md#ShowMessageBox)：显示模态的提示信息窗口

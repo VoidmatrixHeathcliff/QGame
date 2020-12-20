@@ -8,8 +8,8 @@
 
 要查看所有的QGame函数，请访问[APIList.md](APIList.md)
 
-+ CreateWindow
-+ ShowMessageBox
++ [CreateWindow](Window.md#CreateWindow)
++ [ShowMessageBox](Window.md#ShowMessageBox)
 + SetWindowTitle
 + GetWindowTitle
 + SetWindowPosition
@@ -35,25 +35,22 @@ CreateWindow(title, x, y, width, height, flags)
 ```
 **参数**
 
-+ ***[string] title***：窗口标题
-+ ***[number] x***：窗口位置的x坐标，负值表示显示在默认位置
-+ ***[number] y***：窗口位置的y坐标，负值表示显示在默认位置
-+ ***[number] width***：窗口宽度
-+ ***[number] height***：窗口高度
-+ ***[string] flags***：窗口属性标志，可以是如下值组成的字符串：
-
-| 值  | 描述                                                   |
-|:----|:-------------------------------------------------------|
-| "F" | 全屏（通过更改视频模式实现）                           |
-| "D" | 伪全屏（不更改视频模式，仅使用当前设备分辨率显示窗口） |
-| "B" | 无边框窗口                                             |
-| "R" | 窗口大小可变                                           |
-| "M" | 窗口最大化                                             |
-| "N" | 窗口最小化                                             |
+| 类型   | 形参名称 | 注释 |
+| ------ | ------------ | ----------------------------------------- |
+| string | title    | 窗口标题                                                     |
+| number | x        | 窗口位置的x坐标，负值表示显示在默认位置                      |
+| number | y        | 窗口位置的y坐标，负值表示显示在默认位置                      |
+| number | width    | 窗口宽度                                                     |
+| number | height   | 窗口高度                                                     |
+| string | flags    | 窗口属性标志，可以是如下值组成的字符串: "F" : 全屏（通过更改视频模式实现）;  "D" : 伪全屏（不更改视频模式，仅使用当前设备分辨率显示窗口）;  "B" : 无边框窗口; "R" : 窗口大小可变; "M" :  窗口最大化; "N" : 窗口最小化; |
 
 **返回值**
 
 无
+
+**重载个数**
+
+1
 
 **示例**
 
