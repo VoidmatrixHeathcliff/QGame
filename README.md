@@ -1,5 +1,7 @@
 # QGame
 
+### *注意：本项目已停止维护，请使用 [EtherEngine](https://github.com/VoidmatrixHeathcliff/EtherEngine) 构建您所需要的项目*
+
 [![](https://img.shields.io/github/stars/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/stargazers)  [![](https://img.shields.io/github/forks/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/network/members)  [![](https://img.shields.io/github/issues/VoidmatrixHeathcliff/QGame.svg?style=flat&labelColor=3f48cc)](https://github.com/VoidmatrixHeathcliff/QGame/issues)  ![](https://img.shields.io/github/license/VoidmatrixHeathcliff/QGame.svg?style=flat&label=license&message=notspecified&labelColor=3f48cc)
 
 QGame意为Quick Game或Cute Game，是一个基于[SDL](http://www.libsdl.org/)及其附加库开发的轻量级跨平台Lua游戏库。
